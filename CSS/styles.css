@@ -10,6 +10,7 @@ body{
 
 .navbar{
     text-transform: uppercase;
+    margin-bottom: 400px;
 }
 
 .icon{
@@ -44,4 +45,11 @@ li{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .tagline{
+    padding-top: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
