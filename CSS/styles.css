@@ -2,3 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    min-width: 300px;
+    font-size: 16px;
+}
+
+.icon{
+    height: 2rem;
+}
+
+li{
+    list-style-type: none;
+    display: inline-flex;
+}
