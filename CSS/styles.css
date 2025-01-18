@@ -8,6 +8,10 @@ body{
     font-size: 16px;
 }
 
+.navbar{
+    text-transform: uppercase;
+}
+
 .icon{
     height: 2rem;
 }
@@ -16,3 +20,28 @@ li{
     list-style-type: none;
     display: inline-flex;
 }
+
+.main-banner {
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.25),
+        rgba(255, 255, 255, 0.25)
+      ),
+      url(../Images/Studio2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-banner-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: calc(2rem + 2vw);
+    letter-spacing: 4px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
