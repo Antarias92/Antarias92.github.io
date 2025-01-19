@@ -68,7 +68,7 @@ li{
     letter-spacing: 1px;
   }
 
-  #star_question{
+  .star_headers{
     margin: 1rem 0;
     text-align: center;
     font-size: calc(1.1rem + 1.5vw);
