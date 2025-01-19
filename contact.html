@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
+
 <body>
     <header class="container-fluid">
         <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary">
@@ -18,7 +19,7 @@
               <div class="collapse navbar-collapse" id="headerNavigation">
                 <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                   <li class="nav-item menu-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a> <!--change the active on different pages-->
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item menu-item">
                     <a class="nav-link" href="#">S.T.A.R.</a>
@@ -27,7 +28,7 @@
                     <a class="nav-link" href="#">Works Gallery</a>
                   </li>
                   <li class="nav-item menu-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
+                    <a class="nav-link active" href="./contact.html">Contact</a>
                   </li>
                 </ul>
                 <span class="navbar-text">
@@ -48,46 +49,17 @@
             </div>
           </nav>
     </header>
-
     <main>
-        <!--<section class="container-fluid main-banner">
-            <h1 class="main-banner-title">I'm Anthony Arias and Welcome to my Portfolio</h1>
-        </section>-->
-       
-        <section class="container my-4">
-            
-            <section class="row">
-                <h1 class="col tagline">I'm Anthony Arias and Welcome to my Portfolio</h1>
-            </section>
-            <hr class="opacity-25">
-            <section class="row my-4">
-              <h2 class="col col-12 section-title">Academic Journey</h2>
-                    <section class="col col-12 col-md-4">
-                        <h3 class="column-heading">Undergraduate</h3>
-                        <img class="col_Img w-100" src="./Images/Self_Portrait.jpg" alt="Self Portrait" />
-                        <h4 class="column-heading">Arts, Technology, and Emerging Communications - 2021</h4>
-                        <p class="column-p">Focus on game design and digital video production.</p>
-                       
-                    </section>
-                    <section class="col col-12 col-md-4">
-                        <h3 class="column-heading">Graduate</h3>
-                        <img class="col_Img w-100" src="./Images/international_team.jpg" alt="International Team" />
-                        <h4 class="column-heading">International Management Studies - 2023</h4>
-                        <p class="column-p">
-                            Focus on interacting with international teams and marketing.</p>
-                       
-                    </section>
-                    <section class="col col-12 col-md-4">
-                        <h3 class="column-heading">Current</h3>
-                        <img class="col_Img w-100" src="./Images/webDev2.jpg" alt="Web Development" />
-                        <h4 class="column-heading">Software Engineering</h4>
-                        <p class="column-p">Strengthening the skills needed for front end development.</p>
-                        
-                    </section>
-            </section>
-            <hr class="opacity-25">
+        <section>
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div>
         </section>
-     
     </main>
 
     <footer class="container-fluid">
@@ -110,9 +82,5 @@
             
         </div>
     </footer>
-    
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
-
-
-</html>
