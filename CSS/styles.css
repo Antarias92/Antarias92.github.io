@@ -6,7 +6,7 @@
 body{
     min-width: 300px;
     font-size: 16px;
-   
+    font-family: 'Roboto', sans-serif;
 }
 
 .bg_box{
@@ -23,6 +23,11 @@ body{
 .nav-link{
   color: white;
 }
+
+.navbar-toggler{
+    background-color: lightgray;
+}
+
 .icon{
     height: 2rem;
 }
