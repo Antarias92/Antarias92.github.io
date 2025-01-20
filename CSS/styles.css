@@ -32,9 +32,10 @@ body{
     height: 2rem;
 }
 
-li{
-    list-style-type: none;
-    display: inline-flex;
+
+.social_icons{
+  list-style-type: none;
+  display: inline-flex;
 }
 
 .main-banner {
