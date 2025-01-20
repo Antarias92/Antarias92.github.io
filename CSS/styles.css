@@ -81,6 +81,10 @@ body{
     display: flex;
   }
 
+  .wire_img{
+    height: 480px;
+  }
+
   .section-title{
     margin: 1rem 0;
     text-align: center;
