@@ -71,18 +71,18 @@ body{
   }
 
   .col_Img{
-    height: 400px;
+    height: 500px;
     display: flex;
   }
   .gal_Img{
     /*min-height: 300px;
     max-height: 420px;*/
-    height: 300px;
+    height: 500px;
     display: flex;
   }
 
   .wire_img{
-    height: 480px;
+    height: 600px;
   }
 
   .section-title{
