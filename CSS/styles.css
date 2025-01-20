@@ -71,7 +71,7 @@ body{
   }
 
   .col_Img{
-    height: 450px;
+    height: 400px;
     display: flex;
   }
 
@@ -95,6 +95,10 @@ body{
 
   .email_form{
     margin-top: 100px;
+  }
+
+  h3, h4{
+    text-align: center;
   }
 
   [type=submit] {
