@@ -81,7 +81,9 @@ body{
     display: flex;
   }
 
-
+  .bg-dark{
+    color: rgba(18, 78, 102, 1);
+  }
 
   .section-title{
     margin: 1rem 0;
