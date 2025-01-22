@@ -76,8 +76,6 @@ body{
     display: flex;
   }
   .gal_Img{
-    /*min-height: 300px;
-    max-height: 420px;*/
     height: 500px;
     display: flex;
   }
@@ -85,7 +83,7 @@ body{
   .bg-dark {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-}
+  }
 
   .section-title{
     margin: 1rem 0;
@@ -96,9 +94,7 @@ body{
     letter-spacing: 1px;
   }
 
-  .column-p{
-    text-align: center;
-  }
+  
 
   .star_headers{
     margin: 1rem 0;
@@ -113,9 +109,18 @@ body{
     margin-top: 100px;
   }
 
-  h2, h3, h4{
-    text-align: center;
+ .home_text{
+  text-align: right;
+ }
+
+  ul{
+    list-style-type: none;
+    text-align: left;
   }
+
+.li_right{
+  text-align: start;
+}
 
   [type=submit] {
     padding: .7rem;
