@@ -109,19 +109,6 @@ body{
     margin-top: 100px;
   }
 
- .home_text{
-  text-align: right;
- }
-
-  ul{
-    list-style-type: none;
-    text-align: left;
-  }
-
-.li_right{
-  text-align: start;
-}
-
   [type=submit] {
     padding: .7rem;
     font-size: 1rem;

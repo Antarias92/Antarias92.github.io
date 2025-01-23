@@ -14,4 +14,5 @@ User Stories
 Future Improvements
 1.	I want to learn more UI principles to feature non-visual projects and have them appear presentable.
 2.	Incorporate animations when a user clicks on an object or navigates the website.
-3.	I would like to enhance the site with JavaScript. 
+3.	Since we have not learned JavaScript yet, I would like to enhance the site with and JavaScript that may be applicable. 
+4.  I would give users the ability to download content.
