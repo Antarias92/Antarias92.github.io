@@ -6,3 +6,11 @@
 body{
     font-family: 'Play', sans-serif;
 }
+.navbar, .navbar-brand{
+    font-size: 1.5rem;
+}
+
+
+#news_container{
+    margin: 5rem 0;
+}
