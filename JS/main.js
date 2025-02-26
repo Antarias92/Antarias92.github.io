@@ -1,15 +1,16 @@
+
 const api_key = "898c520d92754382ae13cdc6b1f8749d";
 const api_URL = "https://newsapi.org/v2/everything?q=";
 
 const news_container = document.getElementById("news_container");
 
+
 async function renderHeadlines(){
     try{
-        const headlineURL = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=12&apiKey=${api_key}`;
+        const headlineURL = `https://newsapi.org/v2/top-headlines?country=us&pageSize=13&apiKey=${api_key}`;
         const response = await fetch(headlineURL);
         const info = await response.json();
         return info.articles;
-        console.log(info);
     }
     catch(error){
         console.error("Error rendering news", error);
@@ -26,7 +27,9 @@ function displayNews(articles){
         img.src = article.urlToImage;
 
         newsCard.appendChild(img);
+        news_container.appendChild(newsCard);
     });
+   
 }
 
 (async () => {
