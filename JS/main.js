@@ -9,6 +9,7 @@ const search_button = document.getElementById("search_button");
 
 async function renderHeadlines(){
     try{
+        console.log("Loading top headlines...");
         const headlineURL = `https://newsapi.org/v2/top-headlines?country=us&pageSize=13&apiKey=${api_key}`;
         const response = await fetch(headlineURL);
         const info = await response.json();
@@ -23,6 +24,7 @@ async function renderHeadlines(){
 
 async function getQuery(query){
     try{
+        console.log("Getting your query");
         const headlineURL = `https://newsapi.org/v2/everything?q=${query}&pageSize=13&apiKey=${api_key}`;
         const response = await fetch(headlineURL);
         const info = await response.json();
@@ -46,13 +48,16 @@ function displayNews(articles){
         newsCard.classList.add("news_card");
         const img = document.createElement("img");
         img.src = article.urlToImage;
+        img.alt = article.title;
+        const title = document.createElement("h3");
+        title.textContent = article.title;
 
         newsCard.appendChild(img);
+        newsCard.appendChild(title);
         news_container.appendChild(newsCard);
     });
    
 }
-
 
 search_button.addEventListener("click", async () => {
     const query = search_input.value.trim();
@@ -66,7 +71,6 @@ search_button.addEventListener("click", async () => {
         }
     }
 });
-
 
 (async () => {
     try{

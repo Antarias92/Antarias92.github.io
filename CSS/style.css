@@ -22,7 +22,7 @@ body{
 .news_card{
     width: 320px;
     border: 1px solid green;
-    border-radius: 5px;
+    border-radius: .7rem;
     cursor: pointer;
     margin: .7rem;
     padding: .7rem;
@@ -36,4 +36,6 @@ body{
     width: 100%;
     height: 320px;
     object-fit: cover;
+    border-radius: .7rem;
+    margin-bottom: 1rem;
 }
