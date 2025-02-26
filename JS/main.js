@@ -3,13 +3,13 @@ const api_key = "898c520d92754382ae13cdc6b1f8749d";
 const api_URL = "https://newsapi.org/v2/everything?q=";
 
 const news_container = document.getElementById("news_container");
-const search_input = document.getElementById("search_input");
+const search_input = document.getElementById("search_Input");
 const search_button = document.getElementById("search_button");
 
 
 async function renderHeadlines(){
     try{
-        const headlineURL = `https://newsapi.org/v2/top-headlines?country=us&pageSize=1&apiKey=${api_key}`;
+        const headlineURL = `https://newsapi.org/v2/top-headlines?country=us&pageSize=13&apiKey=${api_key}`;
         const response = await fetch(headlineURL);
         const info = await response.json();
         return info.articles;
@@ -21,7 +21,7 @@ async function renderHeadlines(){
 }
 
 
-/*async function getQuery(query){
+async function getQuery(query){
     try{
         const headlineURL = `https://newsapi.org/v2/everything?q=${query}&pageSize=13&apiKey=${api_key}`;
         const response = await fetch(headlineURL);
@@ -35,7 +35,7 @@ async function renderHeadlines(){
         console.error("Error rendering news", error);
         return [];
     }
-}*/
+}
 
 
 
@@ -54,7 +54,7 @@ function displayNews(articles){
 }
 
 
-/*search_button.addEventListener("click", async () => {
+search_button.addEventListener("click", async () => {
     const query = search_input.value.trim();
     if(query !== ""){
         try{
@@ -65,8 +65,7 @@ function displayNews(articles){
             console.log("Search not found", error);
         }
     }
-});*/
-
+});
 
 
 (async () => {
@@ -78,6 +77,3 @@ function displayNews(articles){
         console.error("Error rendering news", error);
     }
 })();
-
-
-
