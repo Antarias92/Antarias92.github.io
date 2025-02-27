@@ -7,9 +7,9 @@ const search_input = document.getElementById("search_Input");
 const search_button = document.getElementById("search_button");
 
 
-async function renderHomepage(){
+/*async function renderHome(){
     try{
-        console.log("Loading homepage...");
+        console.log("Loading cats...");
         const gifURL = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=cats&limit=12`;
         const response = await fetch(gifURL);
         const info = await response.json();
@@ -19,7 +19,7 @@ async function renderHomepage(){
         console.error("Error rendering gifs", error);
         return [];
     }
-}
+}*/
 
 
 async function getQuery(query){
@@ -51,6 +51,9 @@ function displayGifs(gifResults){
         img.alt = data.title;
 
         gifCard.appendChild(img);
+        gifCard.addEventListener("click", () => {            /*Allows user to click search results*/
+            window.open(data.images.original.url, "_blank");
+          });
         gif_container.appendChild(gifCard);
     });
    

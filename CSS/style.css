@@ -11,9 +11,40 @@ body{
 .navbar, .navbar-brand{
     font-size: 1.5rem;
 }
+
+.bg-body-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.main-banner {
+    height: 600px;
+    min-width: 320px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.25),
+        rgba(255, 255, 255, 0.25)
+      ),
+      url(../Images/MarineWalk.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: calc(2rem + 2vw);
+    letter-spacing: 4px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: white;
+}
   
 #gif_container{
-    margin: 5rem 0;
+    margin: 4rem 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -37,32 +68,5 @@ body{
     width: 100%;
     height: 360px;
     object-fit: cover;
-    border-radius: .5rem;
-    
+    border-radius: .5rem;   
 }
-
-.main-banner {
-    height: 600px;
-    min-width: 320px;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.25),
-        rgba(255, 255, 255, 0.25)
-      ),
-      url(../Images/MarineWalk.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .main-banner-title {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: calc(2rem + 2vw);
-    letter-spacing: 4px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    color: white;
-  }
