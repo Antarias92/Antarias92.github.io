@@ -25,7 +25,7 @@ async function renderHomepage(){
 async function getQuery(query){
     try{
         console.log("Getting your query");
-        const gifURL = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${query}&limit=8`;
+        const gifURL = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${query}&limit=36`;
         const response = await fetch(gifURL);
         const info = await response.json();
         const gifResults = info.data.filter(
@@ -49,11 +49,12 @@ function displayGifs(gifResults){
         const img = document.createElement("img");
         img.src = data.images.original.url;
         img.alt = data.title;
-        const title = document.createElement("h3");
-        title.textContent = data.title;
+        //const title = document.createElement("h3");
+        //title.textContent = data.title;
+        
 
         gifCard.appendChild(img);
-        gifCard.appendChild(title);
+        //gifCard.appendChild(title);
         gif_container.appendChild(gifCard);
     });
    

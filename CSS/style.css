@@ -20,12 +20,12 @@ body{
 }
   
 .gif_card{
-    width: 320px;
+    width: 480px;
     border: 1px solid green;
-    border-radius: .7rem;
+    border-radius: .5rem;
     cursor: pointer;
     margin: .7rem;
-    padding: .7rem;
+    
 }
   
 .gif_card:hover {
@@ -34,8 +34,8 @@ body{
   
 .gif_card img{
     width: 100%;
-    height: 320px;
+    height: 360px;
     object-fit: cover;
-    border-radius: .7rem;
-    margin-bottom: 1rem;
+    border-radius: .5rem;
+    
 }
