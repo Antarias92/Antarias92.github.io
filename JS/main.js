@@ -10,7 +10,7 @@ const search_button = document.getElementById("search_button");
 async function renderHomepage(){
     try{
         console.log("Loading homepage...");
-        const gifURL = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=dog&limit=12`;
+        const gifURL = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=cats&limit=12`;
         const response = await fetch(gifURL);
         const info = await response.json();
         return info.data;
