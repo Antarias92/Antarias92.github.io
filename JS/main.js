@@ -49,12 +49,8 @@ function displayGifs(gifResults){
         const img = document.createElement("img");
         img.src = data.images.original.url;
         img.alt = data.title;
-        //const title = document.createElement("h3");
-        //title.textContent = data.title;
-        
 
         gifCard.appendChild(img);
-        //gifCard.appendChild(title);
         gif_container.appendChild(gifCard);
     });
    
@@ -73,7 +69,7 @@ search_button.addEventListener("click", async () => {
     }
 });
 
-(async () => {
+/*(async () => {
     try{
         const gifResults = await renderHomepage();
         displayGifs(gifResults);
@@ -81,4 +77,4 @@ search_button.addEventListener("click", async () => {
     catch(error){
         console.error("Error rendering gifs", error);
     }
-})();
+})();*/
