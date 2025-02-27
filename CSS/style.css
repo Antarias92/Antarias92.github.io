@@ -2,24 +2,24 @@
     margin: 0;
     padding: 0;
 }
-
+  
 body{
     font-family: 'Play', sans-serif;
 }
-
+  
 .navbar, .navbar-brand{
     font-size: 1.5rem;
 }
-
-#news_container{
+  
+#gif_container{
     margin: 5rem 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-
-.news_card{
+  
+.gif_card{
     width: 320px;
     border: 1px solid green;
     border-radius: .7rem;
@@ -27,12 +27,12 @@ body{
     margin: .7rem;
     padding: .7rem;
 }
-
-.news_card:hover {
+  
+.gif_card:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
 }
-
-.news_card img{
+  
+.gif_card img{
     width: 100%;
     height: 320px;
     object-fit: cover;
