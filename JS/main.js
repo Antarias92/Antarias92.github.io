@@ -1,25 +1,9 @@
 
 const api_key = "dMC2OFEnh9THjWRT1OjjpLm0klaKAlCW";
 
-
 const gif_container = document.getElementById("gif_container");
 const search_input = document.getElementById("search_Input");
 const search_button = document.getElementById("search_button");
-
-
-/*async function renderHome(){
-    try{
-        console.log("Loading cats...");
-        const gifURL = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=cats&limit=12`;
-        const response = await fetch(gifURL);
-        const info = await response.json();
-        return info.data;
-    }
-    catch(error){
-        console.error("Error rendering gifs", error);
-        return [];
-    }
-}*/
 
 
 async function getQuery(query){
@@ -48,7 +32,7 @@ function displayGifs(gifResults){
         gifCard.classList.add("gif_card");
         const img = document.createElement("img");
         img.src = data.images.original.url;
-        img.alt = data.title;
+        /*img.alt = data.title;*/
 
         gifCard.appendChild(img);
         gifCard.addEventListener("click", () => {            /*Allows user to click search results*/
@@ -71,13 +55,3 @@ search_button.addEventListener("click", async () => {
         }
     }
 });
-
-/*(async () => {
-    try{
-        const gifResults = await renderHomepage();
-        displayGifs(gifResults);
-    }
-    catch(error){
-        console.error("Error rendering gifs", error);
-    }
-})();*/
