@@ -32,7 +32,6 @@ function displayGifs(gifResults){
         gifCard.classList.add("gif_card");
         const img = document.createElement("img");
         img.src = data.images.original.url;
-        /*img.alt = data.title;*/
 
         gifCard.appendChild(img);
         gifCard.addEventListener("click", () => {            /*Allows user to click search results*/
